@@ -13,7 +13,7 @@ public class FortuneController {
 	@RequestMapping("/fortune")
 	public String fortune(HttpServletRequest request) { //메소드명은 마음대로 , return type 은 String
 		//오늘의 운세를 얻어오는 비즈니스 로직을 수행한다.
-		String fortuneToday="동쪽으로 가면 귀인을 만나요!";
+		String fortuneToday="서쪽으로 가면 귀인을 만나요!";
 		//request 에 "fortuneToday" 라는 키값으로 담기 
 		request.setAttribute("fortuneToday", fortuneToday);
 		
